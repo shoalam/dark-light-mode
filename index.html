@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Dark/Light Mode</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+         <!-- Toggle Switch -->
+	<label class="switch">
+		<input type="checkbox" onclick="darkMode()">
+		<span class="slider round"></span>
+	</label>
+
+        <!-- Content Area -->
+    <main>
+    	<div class="container">
+    		<h1>Toggle Dark/Light Mode</h1>
+    		<div class="content">
+    			<div class="single-content">
+    				<h2>The WET Codebase</h2>
+    				<h5>Sunday 4th, 2020, read 11 min ago</h5>
+    				<p>Come waste your time with me</p>
+    			</div>
+    			<div class="single-content">
+    				<h2>Goodby, Clean Code</h2>
+    				<h5>Friday 22nd, 2019, read 5 min ago</h5>
+    				<p>Let clean code guide you. Then let it go.</p>
+    			</div>
+    			<div class="single-content">
+    				<h2>My Decade In Review</h2>
+    				<h5>Saturday 11th, 2018, read 5 min ago</h5>
+    				<p>A personal reflection.</p>
+    			</div>
+    			<div class="single-content">
+    				<h2>What Are The Team Principles</h2>
+    				<h5>Thursday 4th, 2015, read 5 min ago</h5>
+    				<p>UI Before API.</p>
+    			</div>
+    		</div>
+    	</div>
+    </main>    
+
+<script>
+
+	const darkMode = () =>{
+       document.body.classList.toggle('dark-mode');
+   }
+
+</script>
+</body>
+</html>
